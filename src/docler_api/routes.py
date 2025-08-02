@@ -103,6 +103,7 @@ async def convert_document(
                 # Convert bytes to base64 string
                 image.content = image.to_base64()
     except Exception as e:
+        import traceback; print(traceback.format_exc())
         if not isinstance(e, HTTPException):
             raise HTTPException(
                 status_code=500, detail=f"Error during document conversion: {e!s}"

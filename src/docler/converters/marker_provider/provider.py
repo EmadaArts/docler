@@ -129,7 +129,7 @@ if __name__ == "__main__":
 
     async def main():
         # # Example usage with PDF
-        pdf_path = "/home/phil65/dev/aistack-lab/sap_dokus_pdf/CCM_CONV.pdf"
+        pdf_path = "/home/aistack/dev/ai-workstack/sap_dokus_pdf/CCM_CONV.pdf"
         converter = MarkerConverter()
         result = await converter.convert_file(pdf_path)
 
